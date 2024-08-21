@@ -18,7 +18,7 @@ public class ProgramaComErroDeLogica08
         
         double media = (valor1 + valor2) / 2;
         
-        System.out.println("Média Aritmética:  + media");
+        System.out.println("Média Aritmética: " + media);
     }
 
 }

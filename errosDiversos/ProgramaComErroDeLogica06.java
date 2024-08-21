@@ -12,11 +12,9 @@ public class ProgramaComErroDeLogica06
 
         System.out.println("\fInforme o primeiro valor inteiro: ");
         int valor1 = entrada.nextInt();
-        valor1 = entrada.nextInt();
 
         System.out.println("Informe o segundo valor inteiro: ");
         int valor2 = entrada.nextInt();
-        valor2 = entrada.nextInt();
 
         double media = (valor1 + valor2) / 2;
         System.out.println("Média Aritmética: " + media);

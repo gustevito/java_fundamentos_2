@@ -11,10 +11,10 @@ public class ProgramaComErroDeLogica04
         Scanner entrada = new Scanner(System.in);
         System.out.println("\fInforme o primeiro valor inteiro: ");
         int valor1 = entrada.nextInt();
-        valor1 = 7;
+        
         System.out.println("Informe o segundo valor inteiro: ");
         int valor2 = entrada.nextInt();
-        valor2 = 8;
+        
         double media = (valor1 + valor2) / 2;
         System.out.println("Média Aritmética: " + media);
     }

@@ -12,6 +12,6 @@ public class ProgramaComErroDeLogica02
         
         System.out.println("\fInforme o ano que você nasceu (usando 4 dígitos.ex: 1990): ");
         int ano = entrada.nextInt();
-        System.out.println("Você tem (ou terá nos próximos meses) " + (ano-2015) +  " anos.");
+        System.out.println("Você tem (ou terá nos próximos meses) " + (2024 - ano) +  " anos.");
     }
 }

@@ -4,6 +4,7 @@ public class Repeticao{
         Scanner teclado = new Scanner (System.in);
         int x;
         int resultado;
+        boolean resultadoBool;
         
          while(true){
             exibirMenu();
@@ -11,8 +12,21 @@ public class Repeticao{
             teclado.nextLine();
             
             switch(opcao){
+                case 0:
+                    System.out.print('\u000C');
+                    System.out.println("   ___  _          _                 _       _ ");
+                    System.out.println("  / _ \\| |__  _ __(_) __ _  __ _  __| | ___ | |");
+                    System.out.println(" | | | | '_ \\| '__| |/ _` |/ _` |/ _` |/ _ \\| |");
+                    System.out.println(" | |_| | |_) | |  | | (_| | (_| | (_| | (_) |_|");
+                    System.out.println("  \\___/|_.__/|_|  |_|\\__, |\\__,_|\\__,_|\\___/(_)");
+                    System.out.println("                     |___/                     ");
+    
+                    System.out.println("\n               Volte sempre! :)");
+                    teclado.close();
+                    System.exit(0);
+                break;
                 case 1:
-                    System.out.print('\u000C');   
+                    System.out.print('\u000C');
                     System.out.println("Insira um nº natural:");
                     x = teclado.nextInt();
                     
@@ -40,9 +54,19 @@ public class Repeticao{
                 break;
                 case 4:
                     System.out.print('\u000C');
+                    System.out.println("Insira um nº natural:");
+                    x = teclado.nextInt();
+                    
+                    resultado = Biblioteca.divisoresPropriosSoma(x);
+                    System.out.println("A soma dos divisores proprios de " + x + " é " + resultado + "!");
                 break;
                 case 5:
                     System.out.print('\u000C');
+                    System.out.println("Insira um nº natural:");
+                    x = teclado.nextInt();
+                    
+                    resultadoBool = Biblioteca.ehPrimo(x);
+                    System.out.println(resultadoBool);
                 break;
                 case 6:
                     System.out.print('\u000C');

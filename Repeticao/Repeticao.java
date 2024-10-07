@@ -6,6 +6,9 @@ public class Repeticao{
         int resultado;
         boolean resultadoBool;
         
+        String palavra;
+        int qtChars;
+        
          while(true){
             exibirMenu();
             int opcao = teclado.nextInt();
@@ -66,6 +69,7 @@ public class Repeticao{
                     x = teclado.nextInt();
                     
                     resultadoBool = Biblioteca.ehPrimo(x);
+                    System.out.println("O nº natural é primo?");
                     System.out.println(resultadoBool);
                 break;
                 case 6:
@@ -85,6 +89,22 @@ public class Repeticao{
                 break;
                 case 11:
                     System.out.print('\u000C');
+                break;
+                case 12:
+                    System.out.print('\u000C');
+                    System.out.println("Insira uma palavra:");
+                    
+                    palavra = teclado.nextLine();
+                    qtChars = Biblioteca.quantidadeCaracteres(palavra);
+                    System.out.println("A palavra '" + palavra + "' possui " + qtChars + " caracteres.");
+                break;
+                case 13:
+                    System.out.print('\u000C');
+                    System.out.println("Insira uma palavra:");
+                    
+                    palavra = teclado.nextLine();
+                    qtChars = Biblioteca.quantidadeVogais(palavra);
+                    System.out.println("A palavra '" + palavra + "' possui " + qtChars + " vogais.");
                 break;
                 
                 default:
@@ -115,6 +135,10 @@ public class Repeticao{
         System.out.println("9 – Progressão aritmética");
         System.out.println("10 – Somatório");
         System.out.println("11 – Produtório");
+        System.out.println("\n-------------------------------------------------------");
+        System.out.println("\n               MENU STRINGS                 ");
+        System.out.println("\n12 - Contar a quantidade de caracteres de uma palavra");
+        System.out.println("13 - Contar a quantidade de vogais de uma palavra");
         System.out.println("\n0 – Sair do programa");
     }
 }

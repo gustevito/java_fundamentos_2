@@ -53,7 +53,23 @@ public class Biblioteca{
         return ehP;
     }
     
+    public static int quantidadeCaracteres (String palavra){
+        int qtChars = 0;
+        
+        for (int i = 0; i < palavra.length(); i++){
+            qtChars++;
+        } return qtChars;
+    }
     
+    public static int quantidadeVogais(String palavra){
+        int qtChars = 0;
+        
+        for (int i = 0; i < palavra.length(); i++){
+            if (palavra.charAt(i) == 'a' || palavra.charAt(i) == 'e' || palavra.charAt(i) == 'i' || palavra.charAt(i) == 'o' || palavra.charAt(i) == 'u'){
+                qtChars++;                
+            };    
+        } return qtChars;
+    }
     
     
     

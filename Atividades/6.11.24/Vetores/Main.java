@@ -20,9 +20,18 @@ public class Main{
                 int[] v1 = new int[tamanho];
                 
                 System.out.println("Agora, insira " + tamanho + " valores no vetor separadamente:");
-                
-                
 
+                for(int i = 0; i < v1.length; i++){
+                    valorVetor = teclado.nextInt();
+                    v1[i] = valorVetor;
+                    for(int j = 0; j < v1.length; j++){
+                        if(){
+                            
+
+                        }
+                    }
+                }
+                
             break;
             
             case 2:

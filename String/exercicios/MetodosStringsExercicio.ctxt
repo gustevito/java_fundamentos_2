@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=MetodosStringsExercicio
+comment0.text=\r\n\ encontro\ de\ 30/9\ e\ 4/10\r\n\ exemplos\ de\ uso\ ..troque\ nome\ dos\ metodos\ para\ deixar\ claro\ o\ que\ fazem....\r\n\ \r\n\ no\ main\ complete\ as\ chamadas\ \ dos\ metodos\ que\ faltam\r\n
+comment1.params=palavra
+comment1.target=int\ vogais(java.lang.String)
+comment2.params=palavra
+comment2.target=boolean\ verficaInicio(java.lang.String)
+comment3.params=palavra
+comment3.target=boolean\ metodo3(java.lang.String)
+comment4.params=palavra
+comment4.target=int\ metodo4(java.lang.String)
+comment5.params=palavra
+comment5.target=void\ metodo5(java.lang.String)
+comment6.params=verbo
+comment6.target=void\ metodo6(java.lang.String)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

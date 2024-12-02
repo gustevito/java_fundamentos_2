@@ -1,6 +1,8 @@
 /*
- * Aluno: Gustavo Flores
+ * conjuntos de metodos  estudados ao longo do semestre 
+ * Fundamentos 10 *** 2024/2
  */
+
 
 public class BibliotecaMETODOSVetMat
 {
@@ -23,6 +25,7 @@ public class BibliotecaMETODOSVetMat
             System.out.print("|"+vetor[i]);
         }
         System.out.print("|\n");
+            
     }
     
     public int maiorVetorInt(int[] vetor)
@@ -36,6 +39,7 @@ public class BibliotecaMETODOSVetMat
             }
         }
         return maior;
+            
     }
     
     public double maiorVetorDouble(double[] vetor)
@@ -122,6 +126,7 @@ public class BibliotecaMETODOSVetMat
             
     }
     
+    
     public int[] multiplicaVetorInt(int[] vetor, int num)
     {   //multiplica os elementos de um vetor de ints por um int
         for(int i = 0; i<vetor.length;i++)
@@ -188,18 +193,21 @@ public class BibliotecaMETODOSVetMat
     
     public int[] produtoVetorInt(int[] vetor1, int[] vetor2)
     {   //multiplica os elementos de dois vetores int e gera num vetor **nao e produto escalar
-
+        
+        
         if(vetor1.length<vetor2.length)
         {
             int[] aux = vetor1;
             vetor1 =vetor2;
             vetor2=aux;
         }
+        
+        
         for(int i = 0; i<vetor1.length;i++)
         {
             vetor1[i]=vetor1[i]*vetor2[i];
         }
-
+        
         return vetor1;
             
     }
@@ -665,16 +673,5 @@ public class BibliotecaMETODOSVetMat
             matriz1[i]=produtoVetorDouble(matriz1[i],matriz2[i]);
         }
         return matriz1;
-    }
-
-    // produto de uma diagonal principal !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        public static int diagonalPrincipalProduto(int[][] matriz) {        
-        int produto = 1; // INICIALIZA PRODUTO COM 1
-        int n = matriz.length;
-        
-        for (int i = 0; i < n; i++) {
-            produto *= matriz[i][i]; // Multiplica os elementos da diagonal principal
-        }
-        return produto;
     }
 }
